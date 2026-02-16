@@ -23,7 +23,9 @@ const uploadBtn = document.getElementById('upload-btn');
 const AVAILABLE_PUZZLES = [
     { name: 'Mountain View', src: 'images/mountain.jpg' },
     { name: 'Coding Setup', src: 'images/code.jpg' },
-    { name: 'Mountain Lake', src: 'images/mountain-lake.jpg' }
+    { name: 'Mountain Lake', src: 'images/mountain-lake.jpg' },
+    { name: 'JLT', src: 'images/jlt.png' },
+    { name: 'Sizzler', src: 'images/sizzler.png' }
 ];
 
 // Use a high-quality image from Unsplash
