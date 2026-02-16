@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Jigsaw Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>Puzzle Pieces</h1>
+                <div class="controls">
+                    <select id="puzzle-select">
+                        <option value="custom">Select Image...</option>
+                        <!-- Options will be populated by JS -->
+                    </select>
+                    <button id="shuffle-btn">Shuffle</button>
+                    <input type="file" id="custom-image-input" accept="image/*" style="display: none;">
+                    <button id="upload-btn" title="Upload Custom Image">📷</button>
+                </div>
+            </div>
+            <div id="pieces-container" class="pieces-container">
+                <!-- Pieces will be initially placed here or managed here -->
+                <canvas id="sidebar-canvas"></canvas>
+            </div>
+        </aside>
+        <main class="main-area">
+            <div class="canvas-wrapper">
+                <canvas id="puzzle-canvas"></canvas>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
